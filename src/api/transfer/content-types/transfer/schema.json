@@ -54,6 +54,9 @@
     },
     "trending": {
       "type": "boolean"
+    },
+    "slug": {
+      "type": "string"
     }
   }
 }

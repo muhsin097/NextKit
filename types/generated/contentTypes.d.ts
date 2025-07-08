@@ -632,6 +632,7 @@ export interface ApiTransferTransfer extends Struct.CollectionTypeSchema {
     player: Schema.Attribute.Relation<'oneToOne', 'api::player.player'>;
     publishedAt: Schema.Attribute.DateTime;
     score: Schema.Attribute.Integer;
+    slug: Schema.Attribute.String;
     title: Schema.Attribute.String;
     toClub: Schema.Attribute.Relation<'oneToOne', 'api::club.club'>;
     trending: Schema.Attribute.Boolean;
