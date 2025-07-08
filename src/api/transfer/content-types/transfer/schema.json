@@ -48,6 +48,12 @@
     },
     "lastUpdated": {
       "type": "datetime"
+    },
+    "fee": {
+      "type": "integer"
+    },
+    "trending": {
+      "type": "boolean"
     }
   }
 }

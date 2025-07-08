@@ -529,6 +529,7 @@ export interface ApiClubClub extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     name: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    slug: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -619,6 +620,7 @@ export interface ApiTransferTransfer extends Struct.CollectionTypeSchema {
     currentStatus: Schema.Attribute.Enumeration<
       ['Rumour', 'Confirmed', 'Failed']
     >;
+    fee: Schema.Attribute.Integer;
     fromClub: Schema.Attribute.Relation<'oneToOne', 'api::club.club'>;
     lastUpdated: Schema.Attribute.DateTime;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -632,6 +634,7 @@ export interface ApiTransferTransfer extends Struct.CollectionTypeSchema {
     score: Schema.Attribute.Integer;
     title: Schema.Attribute.String;
     toClub: Schema.Attribute.Relation<'oneToOne', 'api::club.club'>;
+    trending: Schema.Attribute.Boolean;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
